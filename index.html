@@ -197,14 +197,6 @@
     position: absolute;
   }
   
-  .cafe {
-    font-size: 12px;
-    color: black;
-    position: absolute;
-    top: 10px;
-    z-index: 1;
-  }
-  
   .pot {
     width: 180px;
     height: 300px;
@@ -217,12 +209,13 @@
   
   .pot::after {
     content: '';
-    width: 35px;
+    width: 30px;
     height: 40px;
     position: absolute;
-    background-color: black;
-    bottom: 60px;
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(85,78,76,1) 50%, rgba(0,0,0,1) 100%);     
+    top: -40px;
     right: 70px;
+    clip-path: polygon(0 0, 100% 0, 88% 100%, 15% 100%);
     
   }
   
@@ -233,6 +226,20 @@
     position: absolute;
     background-color: white;
     clip-path: polygon(0 0, 0% 100%, 45% 100%);
+  }
+  
+  .pot-handle {
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    border: 13px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(85,78,76,1) 50%, rgba(0,0,0,1) 100%);
+    border-image-slice: 1;
+    border-radius: 50%;
+    z-index: -4;
   }
   
 
@@ -264,9 +271,8 @@
   <div class="can can1"></div>
   <div class="can can2"></div>
   
-  <div class="cafe"></div>
-  
   <div class="pot"></div>
+  <div class="pot-handle"></div>
   
   
   
