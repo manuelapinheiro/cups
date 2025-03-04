@@ -196,11 +196,32 @@
   }
   
   .cafe {
-    background-color: black;
-    bottom: 10px;
-    right: 40px;
     font-size: 12px;
+    color: black;
+    position: absolute;
+    top: 10px;
     z-index: 1;
+  }
+  
+  .pot {
+    width: 180px;
+    height: 300px;
+  background: linear-gradient(270deg, rgba(235,83,10,1) 0%, rgba(255,115,47,1) 50%, rgba(235,83,10,1) 100%); 
+    position: absolute;
+    top: 70px;
+    right: 70px;
+    z-index: -3;
+  }
+  
+  .pot::after {
+    content: '';
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    background-color: black;
+    bottom: 60px;
+    right: 70px;
+    
   }
   
 
@@ -227,10 +248,12 @@
     <div class="stripe"></div>
   </div>
   
-  <div class="can can1">
-    <div class="cafe cafe1">CAFE</div>
-  </div>
+  <div class="can can1"></div>
   <div class="can can2"></div>
+  
+  <div class="cafe"></div>
+  
+  <div class="pot"></div>
   
   
   
