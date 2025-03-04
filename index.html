@@ -31,6 +31,7 @@
     width: 100px;
     height: 100px;
     background: linear-gradient(270deg, rgba(215,215,215,1) 0%, rgba(255,255,255,1) 51%, rgba(215,215,215,1) 100%);
+    overflow: visible;
   }
   
   .cup1 {
@@ -133,20 +134,21 @@
     width: 40px;
     height: 50%;
     border: 13px solid transparent;
-    background: linear-gradient(white, white) padding-box,
+    background: linear-gradient(rgba(255,115,47,1), rgba(255,115,47,1)) padding-box,
       linear-gradient(180deg, rgba(215,215,215,1) 0%, rgba(255,255,255,1) 51%, rgba(215,215,215,1) 100%);
     border-image-slice: 1;
     border-radius: 50%;
     z-index: -1;
   }
-  
+
   .star1 {
     position: absolute;
     width: 30%;
     height: 30%;
     background: white;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    transform: translate(2px, 20px);
+    transform: translate(3px, -186px);
+    z-index: 1;
   }
   
   .star2 {
@@ -155,7 +157,7 @@
     height: 30%;
     background: white;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    transform: translate(2px, 18px);
+    transform: translate(3px, 17px);
   }
   
   .can {
@@ -206,7 +208,7 @@
   .pot {
     width: 180px;
     height: 300px;
-  background: linear-gradient(270deg, rgba(235,83,10,1) 0%, rgba(255,115,47,1) 50%, rgba(235,83,10,1) 100%); 
+    background: linear-gradient(270deg, rgba(235,83,10,1) 0%, rgba(255,115,47,1) 50%, rgba(235,83,10,1) 100%); 
     position: absolute;
     top: 70px;
     right: 70px;
@@ -236,12 +238,14 @@
     <div class="stripe"></div>
     <div class="star1"></div>
   </div>
+  
   <div class="the-cup cup2">
     <div class="stripe"></div>
     <div class="stripe"></div>
     <div class="stripe"></div>
     <div class="star2"></div>
   </div>
+  
   <div class="the-cup cup3">
     <div class="stripe"></div>
     <div class="stripe"></div>
