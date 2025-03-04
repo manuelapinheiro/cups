@@ -87,7 +87,42 @@
     z-index: -1;
   }
   
+  .can {
+    width: 220px;
+    height: 290px;
+    background: linear-gradient(270deg, rgba(213,200,63,1) 0%, rgba(255,235,25,1) 51%, rgba(213,200,63,1) 100%);     
+    z-index: -1;
+  }
   
+  .can::after {
+    content: "";
+    width: 220px;
+    height: 30%;
+    bottom: 0px;
+    position: absolute;
+    background: linear-gradient(270deg, rgba(200,62,62,1) 0%, rgba(255,34,34,1) 51%, rgba(200,62,62,1) 100%);     
+  }
+  
+  .can::before {
+    content: "";
+    width: 220px;
+    height: 7%;
+    top: 0px;
+    position: absolute;
+    background: linear-gradient(270deg, rgba(180,169,53,1) 0%, rgba(213,200,63,1) 51%, rgba(180,169,53,1) 100%); 
+  }
+  
+  .can1 {
+    bottom: 0px;
+    left: 10px;
+    position: absolute;
+  }
+  
+  .can2 {
+    bottom: 0px;
+    right: 40px;
+    position: absolute;
+  }
 
 </style>
 
@@ -102,6 +137,9 @@
     <div class="stripe"></div>
     <div class="stripe"></div>
   </div>
+  
+  <div class="can can1"></div>
+  <div class="can can2"></div>
   
   
   
